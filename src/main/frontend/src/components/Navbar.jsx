@@ -27,7 +27,7 @@ function Navbar() {
             <ul className='flex flex-col fixed w-full h-full items-center justify-center'>
                 <li className='font-bold text-3xl p-8'>Home</li>
                 <li className='font-bold text-3xl p-8'>Brazil</li>
-                <li className='font-bold text-3xl p-8'>Rusia</li>
+                <li className='font-bold text-3xl p-8'>Russia</li>
                 <li className='font-bold text-3xl p-8'>Sweden</li>
                 <li className='font-bold text-3xl p-8'>France</li>
                 <li className='font-bold text-3xl p-8'>Argentina</li>
