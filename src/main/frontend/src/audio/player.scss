@@ -1,0 +1,72 @@
+.player_container {
+    width: 75%;
+    padding: 1rem;
+    border: 1px solid rgb(172, 172, 172);
+    border-radius: 10px;
+    color: rgb(84, 84, 180);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(139, 139, 139);
+    margin: 0 auto; /* 추가 */
+
+    >* {
+        padding: 1rem 0;
+        color: rgb(255, 165, 0);
+    }
+
+    .title{
+        font-size: inherit;
+    }
+
+    .navigation{
+        width: 100%;
+
+        .navigation_wrapper{
+            min-width: 100%;
+            background-color: rgba(230, 216, 216, 0.781);
+            height: 6px;
+            border-radius: 30px;
+            cursor: pointer;
+
+            .seek_bar{
+                width: 0;
+                height: 100%;
+                background-color: rgb(135, 206, 250);
+                border-radius: 30px;
+            }
+        }
+    }
+
+    .controls{
+        font-size: inherit;
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+
+        .btn_action{
+            font-size: 2rem;
+            margin-right: 2rem;
+            transition: all 0.2s ease-in-out;
+
+            &:hover, &:active{
+                transform: scale(1.1);
+            }
+        }
+
+        .pp{
+            color: rgb(255, 165, 0);
+            font-size: 3rem;
+            transition: all 0.2s ease-in-out;
+
+            &:hover{
+                color: rgb(255, 200, 0);
+            }
+
+            &:active{
+                transform: scale(1.1);
+            }
+        }
+    }
+}

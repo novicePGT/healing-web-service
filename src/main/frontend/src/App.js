@@ -5,6 +5,7 @@ import Brazil from './components/Brazil.jsx';
 import Recommend from './components/Recommend.jsx';
 import ImageSlider from './components/ImageSlider.jsx';
 import Footer from './components/Footer.jsx';
+import AudioPlayer from './components/AudioPlayer.jsx';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Navbar />
       <Main />
       <Objectives />
+      <AudioPlayer />
       <Brazil />
       <Recommend />
       <ImageSlider />
