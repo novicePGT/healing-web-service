@@ -9,6 +9,15 @@ const AudioPlayer = () => {
     const [isPlaying, setIsPlaying] = useState(false);
     const [currentMusic, setCurrentMusic] = useState(musicData[0])
 
+    const onPlaying = () => {
+      const duration = audioElement.current.duration
+      const currentTime = audioElement.current.currentTime
+
+      setCurrentMusic({ ... currentMusic, "progress": currentTime / duration * 100, "length": duration})
+
+      // console.log(duration, currentTime)
+    }
+
     const audioElement = useRef()
 
     useEffect(() => {
@@ -23,8 +32,9 @@ const AudioPlayer = () => {
 
   return (
     <div>
-        <audio src={currentMusic.music.src} ref={audioElement}></audio>
-        <Player music={music} setMusic={setMusic} isPlaying={isPlaying} setIsPlaying={setIsPlaying} audioElement={audioElement} currentMusic={currentMusic} />
+        <audio src={currentMusic.music.src} ref={audioElement} onTimeUpdate={onPlaying}></audio>
+        <Player music={music} setMusic={setMusic} isPlaying={isPlaying} setIsPlaying={setIsPlaying} audioElement={audioElement} 
+        currentMusic={currentMusic} setCurrentMusic={setCurrentMusic} />
     </div>
   )
 }
