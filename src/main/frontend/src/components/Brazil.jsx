@@ -12,13 +12,12 @@ const Brazil = () => {
             <img className='row-span-2 object-cover w-full h-full p-1' src="https://cdn.pixabay.com/photo/2016/07/22/03/27/rio-de-janeiro-1534089__480.jpg" alt="" />
         </div>
         {/* Right Image*/}
-        <div className='flex flex-col h-full justify-center'>
-            <h3 className='text-5xl md:text-6xl font-vold'>Stimulate your sensitivity.</h3>
-            <p className='text-2xl py-6'>고화질의 영상 및 사진으로 업무에 집중해보세요.</p>
-            <p>업무가 아니더라도 좋아요 ~ 무엇이든지 우리와 함께 해보는건 어떠세요 ?</p>
-            <p className='pb-6'>꾸준한 업데이트와 감성적인 여러 배경들로 서비스할게요 !!</p>
+        <div className='flex flex-col h-full justify-center items-center'>
+            <h3 className='text-5xl md:text-6xl font-vold'>오늘의 브라질</h3>
+            <p className='text-2xl py-6'>눈물로 끝난 브라질의 월드컵...치치 감독 크로아티전 패배 후 사퇴</p>
+            <p>이렇게 끝날 것라고 아무도 예상하지 못했다. 월드컵 우승후보 브라질이 9일(현지시각) 카타르 에듀케이션 시티 스타디움에서 펼쳐진 크로아티아와의 8강전에서 승부차기 끝에 패배(1-1, PK 2-4)했다.</p>
             <div>
-                <button className='border-black mr-6 hover:shadow-xl'>Show More</button>
+                <button className='border-black mr-6 mt-4 hover:shadow-xl'>다른 뉴스 보기</button>
             </div>    
         </div>
     </div>
