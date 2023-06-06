@@ -10,7 +10,7 @@ import lombok.Data;
 @Data
 public class ImageItem {
 
-    private int id;
+    private Long id;
     private String imageName;
     private String imageUrl;
 
@@ -24,7 +24,7 @@ public class ImageItem {
 
     }
 
-    public ImageItem(int id, String imageName, String imageUrl) {
+    public ImageItem(Long id, String imageName, String imageUrl) {
         this.id = id;
         this.imageName = imageName;
         this.imageUrl = imageUrl;

@@ -17,7 +17,7 @@ public class ImageItemDAO {
     private final String user = "root";
     private final String password = "1208";
 
-    public List<ImageItem> getImagesByCountry(String country) {
+    public List<ImageItem> findImagesByCountry(String country) {
         List<ImageItem> images = new ArrayList<>();
         String sql = "SELECT id, imageName, imageUrl FROM " + country + "Image";
         try(Connection connection = DriverManager.getConnection(url, user, password)) {
@@ -25,7 +25,7 @@ public class ImageItemDAO {
             ResultSet resultSet = preparedStatement.executeQuery();
 
             while (resultSet.next()) {
-                int id = resultSet.getInt("id");
+                Long id = resultSet.getLong("id");
                 String imageName = resultSet.getString("imageName");
                 String imageUrl = resultSet.getString("imageUrl");
 
